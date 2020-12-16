@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  # ---------------------------
+  # Start Team Two Sandbox
+  # ---------------------------
+  team-two-sandbox:
+    container_name: "team-two-sandbox"
+    hostname: "team-two-sandbox"
+    build: .
+    image: team-two-sandbox
+    ports:
+      - 8080:8080
